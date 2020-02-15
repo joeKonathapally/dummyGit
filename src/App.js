@@ -84,9 +84,10 @@ class App extends Component {
           <Header title="BITCOIN PRICE INDEX" />
 
           <div className="select-container">
-            <span style={{fontSize: 18, fontFamily: 'Bungee'}}> Select your currency: </span>
             <select value={this.state.currency} onChange={this.onCurrencySelect}>
               {currencies.map((obj, index) =>
+              // can we change the world
+              // if we see that there really isnt much else that we can add what can we do
                 <option key={`${index}-${obj.country}`} value={obj.currency}> {obj.country} </option>
               )}
             </select>
